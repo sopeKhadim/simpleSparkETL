@@ -1,0 +1,7 @@
+[debug] > Exec(all {file:/C:/Users/A693652/IdeaProjects/simpleSparkETL/}root/products {file:/C:/Users/A693652/IdeaProjects/simpleSparkETL/}root/test:products, None, None)
+[debug] Evaluating tasks: Compile / products, Test / products
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[success] Total time: 2 s, completed 24 févr. 2023 14:42:31
+[debug] > Exec(idea-shell, None, None)
+[debug] > Exec(, None, None)
+[debug] > Exec(idea-shell, None, None)
