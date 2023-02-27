@@ -15,7 +15,8 @@ lazy val root = (project in file("."))
       "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
       "com.typesafe" % "config" % "1.4.2",
       "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5",
-      "org.apache.commons" % "commons-lang3" % "3.12.0"
+      "org.apache.commons" % "commons-lang3" % "3.12.0",
+      "com.concurrentthought.cla" %% "command-line-arguments" % "0.6.0"
     ),
     assembly / mainClass := Some("com.atos.cisa.Main"),
     assembly / assemblyOption ~= {
