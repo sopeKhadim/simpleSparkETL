@@ -1,4 +1,4 @@
-package com.atos.cisa
+package com.example
 package Ingestion
 
 import org.apache.spark.sql.{DataFrame, SparkSession}
