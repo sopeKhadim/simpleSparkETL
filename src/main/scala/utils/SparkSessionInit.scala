@@ -1,4 +1,4 @@
-package com.atos.cisa
+package com.example
 package utils
 
 import com.typesafe.config.{Config, ConfigFactory}
