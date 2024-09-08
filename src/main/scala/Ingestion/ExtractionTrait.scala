@@ -1,9 +1,9 @@
-package com.atos.cisa
+package com.example
 package Ingestion
 
-import com.atos.cisa.utils.Logger
+import com.example.utils.Logger
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import com.atos.cisa.utils.SparkSessionInit
+import com.example.utils.SparkSessionInit
 
 trait ExtractionTrait {
 
