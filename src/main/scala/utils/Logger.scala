@@ -1,4 +1,4 @@
-package com.atos.cisa
+package com.example
 package utils
 
 import org.slf4j.{Logger, LoggerFactory}
