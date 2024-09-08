@@ -1,4 +1,4 @@
-package com.atos.cisa
+package com.example
 package transform
 
 // This object class helps to do all transformation rules.
