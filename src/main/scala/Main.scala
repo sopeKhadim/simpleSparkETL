@@ -1,10 +1,10 @@
-package com.atos.cisa
+package com.example
 
-import com.atos.cisa.utils.SparkSessionInit
-import com.atos.cisa.utils.Logger
-import com.atos.cisa.utils.SparkSessionInit.initSparkSession
+import com.example.utils.SparkSessionInit
+import com.example.utils.Logger
+import com.example.utils.SparkSessionInit.initSparkSession
 import org.apache.spark.sql.SparkSession
-import com.atos.cisa.utils.Utils
+import com.example.utils.Utils
 
 import java.io.File
 
