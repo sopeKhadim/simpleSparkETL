@@ -1,6 +1,6 @@
-package com.atos.cisa
+package com.example
 package load
-import com.atos.cisa.utils.Logger
+import com.example.utils.Logger
 
 
 object LoadDateIntoTable {
