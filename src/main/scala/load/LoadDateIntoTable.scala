@@ -19,15 +19,6 @@ object LoadDateIntoTable {
       withColumn("month", month(col("temp_date"))).
       withColumn("day", dayofmonth(col("temp_date"))).
       drop("temp_date")
-    dfResult.show()
-
-    // insert into hive table
-//    dfResult
-//      .write
-//      .format("parquet")
-//      .option("compression","snappy")
-//      .mode("append")
-//      .insertInto(s"$database.$table")
 
     dfResult
       .write
@@ -37,11 +28,10 @@ object LoadDateIntoTable {
       .mode("append")
       .saveAsTable(s"$database.$table")
     } else {
-      df.show()
       df.write
         .format("parquet")
         .option("compression","snappy")
-        .mode("overwrite")
+        .mode("append")
         .saveAsTable(s"$database.$table")
 
     }
