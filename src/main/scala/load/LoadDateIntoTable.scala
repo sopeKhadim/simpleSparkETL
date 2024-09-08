@@ -1,5 +1,7 @@
 package com.atos.cisa
 package load
+import com.atos.cisa.utils.Logger
+
 
 object LoadDateIntoTable {
 
@@ -7,7 +9,7 @@ object LoadDateIntoTable {
 
    def saveDataIntoHive(df : DataFrame, database : String, table : String, isPartitionTable : Boolean = true ): Unit = {
 
-    Logger.info("-- Debug : Inserting data into table  " +table + "...")
+    Logger._log.info("-- Debug : Inserting data into table  " +table + "...")
 
     if (isPartitionTable) {
     val final_df = df.withColumn("temp_date", to_date(col("eventdate"), "yyyy-MM-dd"))
@@ -44,7 +46,7 @@ object LoadDateIntoTable {
 
     }
 
-    Logger.info("-- Debug : Data written into partition successfully.")
+    Logger._log.info("-- Debug : Data written into partition successfully.")
 
   }
 
