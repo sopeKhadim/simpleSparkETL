@@ -9,7 +9,7 @@ lazy val sparkVersion = sys.env.getOrElse("SPARK_VERSION", "2.4.7")
 lazy val root = (project in file("."))
   .settings(
     name := "simpleSparkETL",
-    idePackagePrefix := Some("com.atos.cisa"),
+    idePackagePrefix := Some("com.example"),
     libraryDependencies ++= Seq(
       "org.apache.spark" %% "spark-core" % sparkVersion % "provided",
       "org.apache.spark" %% "spark-sql" % sparkVersion % "provided",
@@ -18,7 +18,7 @@ lazy val root = (project in file("."))
       "org.apache.commons" % "commons-lang3" % "3.12.0",
       "com.concurrentthought.cla" %% "command-line-arguments" % "0.6.0"
     ),
-    assembly / mainClass := Some("com.atos.cisa.Main"),
+    assembly / mainClass := Some("com.example.Main"),
     assembly / assemblyOption ~= {
       _.withIncludeScala(false)
         .withIncludeDependency(false)
