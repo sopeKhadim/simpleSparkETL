@@ -38,7 +38,7 @@ object Utils {
 
   }
   def main(args: Array[String]): Unit = {
-    val strings: Array[String] = "run Main --hiveConf hive_config.conf --jobConf=./config/job_config.conf -t table4g -f FTreport_3G_PLMN_Heure2.csv".split(" ")
+    val strings: Array[String] = "runMain --hiveConf hive_config.conf --jobConf=./config/job_config.conf -t table4g -f FTreport_3G_PLMN_Heure2.csv".split(" ")
     parseArgs(strings)
 
   }
